@@ -18,7 +18,9 @@ _Objectives are listed as:_
 | ------------- |:-------------:| -----:|
 | Select size of pizza via Bootstrap drop-down box|Small - $8 / Medium - $10 / Large - $12|*click* - Medium $ 10|
 |  Create area on right side of page where the current price will be listed  |X| X|
-| Provide checkboxes labled "Toppings" underneath the pizza size selector that will have several ingredients to check off  |*box* sausage (add $0.50)| *box gets checked*|
+| Provide checkboxes labeled "Toppings" underneath the pizza size selector that will have several ingredients to check off  |*box* sausage (add $0.50)| *box gets checked*|
+| Associate values to pizza size |medium pizza = $10| $10|
+| Associate values to topping selection |sausage = $0.50| $.50|
 | Any additional costs (toppings) will be listed beneath the size of pizza you ordered |*box getting checked will check box followed*| *the selected topping being shown on the right where your order is viewed*|
 | Add up all costs of the pizza | [medium pizza] + [sausage] | = $8.50|
 | Selecting pineapple as a topping will send you and alert/message |*check pineapple box*| alert(Pineapple on pizza is illegal, sorry)|

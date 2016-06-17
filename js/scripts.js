@@ -1,30 +1,37 @@
 
 // Backend logic
-function Pizza(size, toppings) {
+function Pizza(size, toppings, price) {
   this.size = size;
   this.toppings = toppings;
+  this.price = price;
 }
+
 
 // this checks the size of the pizza and will help determine what size will be shown on the final order
-function sizeCheck () {
-  var smallPizza =  document.getElementbyId("input#small").checked;
-  var mediumPizza =  document.getElementbyId("input#medium").checked;
-  var largePizza =  document.getElementbyId("input#large").checked;
+Pizza.prototype.calc = function (size) {
+  function sizeCheck () {
+    var smallPizza =  document.getElementbyId("input#small").checked;
+    var mediumPizza =  document.getElementbyId("input#medium").checked;
+    var largePizza =  document.getElementbyId("input#large").checked;
+    var sizeCost = 0;
 
-  if (smallPizza === true)  {
-    document.getElementbyId("input#medium").checked = false;
-    document.getElementbyId("input#large").checked = false;
-  } else if (mediumPizza === true)  {
-    document.getElementbyId("input#small").checked = false;
-    document.getElementbyId("input#large").checked = false;
-  } else {
-    document.getElementbyId("input#small").checked = false;
-    document.getElementbyId("input#medium").checked = false;
+    if (smallPizza === true)  {
+      document.getElementbyId("input#medium").checked = false;
+      document.getElementbyId("input#large").checked = false;
+      sizeCost += 8;
+    } else if (mediumPizza === true)  {
+      document.getElementbyId("input#small").checked = false;
+      document.getElementbyId("input#large").checked = false;
+      sizeCost += 10;
+    } else {
+      document.getElementbyId("input#small").checked = false;
+      document.getElementbyId("input#medium").checked = false;
+      sizeCost += 12;
 
-    console.log("You either picked a large pizza or you fucked up");
+      console.log("You either picked a large pizza or you fucked up");
+    }
   }
-}
-
+};
 
 
 // Front-end logic
