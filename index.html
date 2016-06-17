@@ -9,49 +9,54 @@
     <script src="js/scripts.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="content container col-lg-6">
-      <h2>PIMP YOUR PIZZA</h2>
+    <div class="content container col-md-6 col-md-offset-2">
+      <div class="colorize">
+      <h2>PIZZA PIMP</h2>
+      </div>
 
 <!-- Pizza SIZE form STARTS hurr -->
     <form id="pizza-custom">
+      <h3>Sizes</h3>
       <div class="form-group">
         <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="small" value="8" checked>
-            Small pizza (satisfies 1) &mdash; $8
+            Small pizza <em>(satisfies 1)</em> &mdash; <strong>$8</strong>
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="medium" value="10">
-            Medium pizza (satisfies 2) &mdash; $10
+            Medium pizza <em>(satisfies 2)</em> &mdash; <strong>$10</strong>
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="large" value="12">
-            Large pizza (satisfies 3) &mdash; $12
+            Large pizza <em>(satisfies 3)</em> &mdash; <strong>$12</strong>
           </label>
         </div>
     </div>
 <!-- Pizza SIZE form ENDS hurr -->
 
 <!-- Pizza TOPPINGS form STARTS hurr -->
+  <h3>Toppings (+$1)</h3>
     <div class="form-group">
-        <ul id="finaltoppings" class="list-unstyled">
+        <div id="finaltoppings" class="list-unstyled">
           <div class ="toppings">
             <label class="checkbox-inline">
-            <input type="checkbox" name="toppings"> Sausage - Olympia Provisions Finocchiona
+            <input type="checkbox" name="toppings"> Sausage - <em>Olympia Provisions Finocchiona</em>
+            </label>
           </div>
         </div>
           <div class ="toppings">
             <label class="checkbox-inline">
-            <input type="checkbox" name="toppings"> Mushrooms - Home-grown shitakke mushrooms
+            <input type="checkbox" name="toppings"> Mushrooms - <em>Home-grown shitakke mushrooms</em>
             </label>
           </div>
           <div class ="toppings">
             <label class="checkbox-inline">
-              <input type="checkbox" name="toppings"> Garlic - Serenity Farms purple garlic
+              <input type="checkbox" name="toppings"> Garlic - <em>Serenity Farms purple garlic</em>
             </label>
           </div>
           <div class ="toppings">
@@ -62,22 +67,21 @@
               </label>
             </label>
           </div>
-        </ul>
-        <button type="submit" class="btn btn-primary" id="submit">Submit Pimped Pizza</button>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">PIMP MY PIZZA</button>
+      </div>
     </form>
-
 <!-- Pizza TOPPINGS form ENDS hurr -->
 
 <!-- Final ORDERVIEW STARTS hurr -->
-      <div class="col-lg-4">
-        <div id="finalorder">
-          <h3>Your Order</h3>
-            <ul  class="list-unstyled" id="finaltoppings">
-            </ul>
-        </div>
+    <div class="col-md-6 col-md-offset-2 total">
+      <h3 id="finaltotes">Pimped Pizza Total</h3>
+      <div id="finalorder">
+          <ul  class="list-unstyled" id="finaltoppings">
+         </ul>
       </div>
+    </div>
 <!-- Final ORDERVIEW ENDS hurr -->
 
-    </div>
   </body>
 </html>

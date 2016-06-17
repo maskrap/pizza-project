@@ -1,4 +1,3 @@
-
 // Backend logic
 function Pizza(size, price) {
   this.size = size;

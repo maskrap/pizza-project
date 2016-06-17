@@ -1,8 +1,63 @@
+
+.total  {
+  margin-top: 50px;
+}
+
+.container  {
+max-width: 5000px;
+}
+
+
+html {
+  background: #69D2E7;
+}
+
+body{
+  margin: 20px;
+	padding: 25px;
+	display: flex;
+  border-radius: 20px/60px;
+  background: #69D2E7;
+
+}
+
+h2 {
+	color: #111;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 275px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+#colorize {
+  background: #FDDC54;
+}
+
 #pizza-size {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/*#pizza-toppings {
-  padding-top: 10px;
-}*/
+#pizza-custom	{
+	padding-bottom: 20px;
+  font-family: 150% 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  /*text-align: center;*/
+}
+
+#finaltotes {
+  padding-top: 525px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+#finalorder{
+  font: 300% georgia, sans-serif;
+}
