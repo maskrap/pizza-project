@@ -10,46 +10,46 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="content container col-lg-4">
+    <div class="content container col-lg-6">
       <h2>PIMP YOUR PIZZA</h2>
 
 <!-- Pizza SIZE form STARTS hurr -->
       <form id="pizza-custom">
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="small" value="option1" checked>
+            <input type="radio" name="optionsRadios" id="small" value="8" checked>
             Small pizza (satisfies 1) &mdash; $8
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="medium" value="option2">
+            <input type="radio" name="optionsRadios" id="medium" value="10">
             Medium pizza (satisfies 2) &mdash; $10
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="large" value="option2">
+            <input type="radio" name="optionsRadios" id="large" value="12">
             Large pizza (satisfies 3) &mdash; $12
           </label>
         </div>
 <!-- Pizza SIZE form ENDS hurr -->
 
 <!-- Pizza TOPPINGS form STARTS hurr -->
-        <ul class="list-unstyled">
+        <ul id="toppingsList" class="list-unstyled">
           <li>
             <label class="checkbox-inline">
-            <input type="checkbox" id="sausageCheckbox" value="sausage"> Sausage - Olympia Provisions Finocchiona (+$0.50)
+            <input type="checkbox" name="toppings" value=".50"> Sausage - Olympia Provisions Finocchiona (+$0.50)
             </label>
           </li>
           <li>
             <label class="checkbox-inline">
-            <input type="checkbox" id="mushroomCheckbox" value="mushroom"> Mushrooms - Home-grown shitakke mushrooms (+$0.25)
+            <input type="checkbox" name="toppings" value=".25"> Mushrooms - Home-grown shitakke mushrooms (+$0.25)
             </label>
           </li>
           <li>
             <label class="checkbox-inline">
-              <input type="checkbox" id="garlicCheckbox" value="garlic"> Garlic - Serenity Farms purple garlic (+$0.25)
+              <input type="checkbox" name="toppings" value=".25"> Garlic - Serenity Farms purple garlic (+$0.25)
             </label>
           </li>
           <li>
@@ -61,18 +61,16 @@
             </label>
           </li>
         </ul>
-        <button type="button" class="btn btn-primary" id="submit">Submit Pimped Pizza</button>
+        <button type="submit" class="btn btn-primary" id="submit">Submit Pimped Pizza</button>
       </form>
+
 <!-- Pizza TOPPINGS form ENDS hurr -->
 
 <!-- Final ORDERVIEW STARTS hurr -->
       <div class="col-lg-4">
         <div id="finalorder">
           <h3>Your Order</h3>
-          <h4 id="pizza-size"><h4>
             <ul  class="list-unstyled" id="finaltoppings">
-              <li></li>
-              <li></li>
             </ul>
         </div>
       </div>
