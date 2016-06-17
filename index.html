@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="content">
-    <div class="container">
+    <div class="content container col-lg-4">
       <h2>PIMP YOUR PIZZA</h2>
 
 <!-- Pizza SIZE form STARTS hurr -->
-      <form id="pizza-size">
+      <form id="pizza-custom">
         <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="small" value="option1" checked>
@@ -34,11 +33,9 @@
             Large pizza (satisfies 3) &mdash; $12
           </label>
         </div>
-      </form>
 <!-- Pizza SIZE form ENDS hurr -->
 
 <!-- Pizza TOPPINGS form STARTS hurr -->
-      <form id="pizza-toppings">
         <ul class="list-unstyled">
           <li>
             <label class="checkbox-inline">
@@ -68,7 +65,19 @@
       </form>
 <!-- Pizza TOPPINGS form ENDS hurr -->
 
-    </div>
+<!-- Final ORDERVIEW STARTS hurr -->
+      <div class="col-lg-4">
+        <div id="finalorder">
+          <h3>Your Order</h3>
+          <h4 id="pizza-size"><h4>
+            <ul  class="list-unstyled" id="finaltoppings">
+              <li></li>
+              <li></li>
+            </ul>
+        </div>
+      </div>
+<!-- Final ORDERVIEW ENDS hurr -->
+
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
