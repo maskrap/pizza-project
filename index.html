@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pimp My Pizza</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="content">
+    <div class="container">
+      <h2>PIMP YOUR PIZZA</h2>
+
+<!-- Pizza SIZE form STARTS hurr -->
+      <form id="pizza-size">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="small" value="option1" checked>
+            Small pizza (satisfies 1) &mdash; $8
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="medium" value="option2">
+            Medium pizza (satisfies 2) &mdash; $10
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="large" value="option2">
+            Large pizza (satisfies 3) &mdash; $12
+          </label>
+        </div>
+      </form>
+<!-- Pizza SIZE form ENDS hurr -->
+
+<!-- Pizza TOPPINGS form STARTS hurr -->
+      <form id="pizza-toppings">
+        <ul class="list-unstyled">
+          <li>
+            <label class="checkbox-inline">
+            <input type="checkbox" id="sausageCheckbox" value="sausage"> Sausage - Olympia Provisions Finocchiona (+$0.50)
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-inline">
+            <input type="checkbox" id="mushroomCheckbox" value="mushroom"> Mushrooms - Home-grown shitakke mushrooms (+$0.25)
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="garlicCheckbox" value="garlic"> Garlic - Serenity Farms purple garlic (+$0.25)
+            </label>
+          </li>
+          <li>
+            <label class="checkbox disabled">
+              <label>
+                <input type="checkbox" value="" disabled>
+                Pineapple (+$1.00)
+              </label>
+            </label>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary" id="submit">Submit Pimped Pizza</button>
+      </form>
+<!-- Pizza TOPPINGS form ENDS hurr -->
+
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
